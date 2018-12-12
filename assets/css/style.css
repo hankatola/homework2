@@ -2,23 +2,47 @@ body {
     background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
     background-color: #131313;
     background-size: 20px 20px;
+    min-width: 380px;
 }
 
 header {
+    position: fixed;
+    top: 0;
     background-color: white;
     border-bottom: 3px solid grey;
     width: 100%;
+    z-index: 99;
+    padding-top: 20px;
+    min-width: 380px;
 }
 
 main {
     background-color: white;
+    margin-top: 90px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
     line-height: 2;
+    max-width: 720px;
+}
+
+.badge {
+    background: darkslateblue;
+    color: white;
+    border-radius: 0;
+}
+
+.banner {
+    bottom: 110px;
+    background: darkslateblue;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -29,11 +53,49 @@ main {
     border-top: 6px solid darkslateblue;
 }
 
+.navbar {
+    float: right;
+}
+
+.port-image {
+    max-width: 330px;
+}
+
 .spacer {
     height: 20px;
+}
+
+.special {
+    width: 300px;
 }
 
 .title {
     border-bottom: 3px solid #202124;
     margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+    main {
+        margin-top: 140px;
+    }
+    .badge {
+        width: 100%;
+        text-align: center;
+    }
+    .col-auto,
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .col-lg {
+        float: none;
+        margin: auto;
+    }
+    .col-lg,
+    .navbar,
+    .row {
+        margin: auto !important;
+        float: none !important;
+        text-align: center !important;
+    }
 }

@@ -17,14 +17,14 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg w-100">
+                <div class="col-auto w-100">
                     <div class="badge align-bottom float-left">
                         <h3>Dave Paquette</h3>
                     </div>
-                    <div class="navbar float-right">
+                    <div class="navbar">
                         <a type="button" class="btn btn-light" role="button" href="index.html">About</a>
                         <a type="button" class="btn btn-light" role="button" href="portfolio.html">Portfolio</a>
-                        <a type="button" class="btn btn-light" role="button" href="contanct.html">Contact</a>
+                        <a type="button" class="btn btn-light" role="button" href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -36,18 +36,27 @@
     <main class="container">
         <div class="row title">
             <div class='col-lg m-2'>
-                <h2>About Me</h2>
+                <h2>Contact</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-lg">
-                <div><img src="assets/images/dave.jpg" height="300" width="225" class='rounded float-left m-2'></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Contact Form -->
+                <form action="mailto:dpaquette2.0@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Message</label>
+                        <textarea type="text" class="form-control" id="Message" placeholder="Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
             </div>
         </div>
     </main>
